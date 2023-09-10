@@ -1,5 +1,14 @@
-*{
-    font-family: 'Palanquin Dark', sans-serif;
-
+:root{
+    --font-primary:   'Palanquin Dark', sans-serif;
+    --font-second: 'Passion One', cursive;
 }
+
+*{
+   font-family: var(--font-primary);
+}
+
+.font-second{
+    font-family: var(--font-second);
+}
+
 
