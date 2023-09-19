@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Car - Elly's Dinner</title>
+</head>
+<body class="flex flex-col h-screen justify-between"> 
+    
+    <nav class="flex justify-evenly items-center p-5 bg-white w-full">
+        <div class="logo-container">
+            <img class="w-9/12" src="img/marca.png" alt="">
+        </div>
+        <div class="">
+            <ul class="navbar-text flex gap-7 text-lg text-slate-800">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="car-shop-container flex gap-3 text-lg items-center justify-center">
+            <a href="#">
+                <div class="dropdown inline-block relative">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  <ul class="dropdown-menu absolute  hidden text-gray-700 pt-1">
+                    <li class="rounded bg-white py-2 px-4 block whitespace-no-wrap ">
+                        <table class="rounded ">
+                            <thead>
+                                <tr class="text-sm flex gap-10 p-3 border-b">
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="flex gap-5 items-center p-4	">
+                                    <td class="w-20"><img src="img/Img6.png" alt=""></td>
+                                    <td class="w-20"><p class="text-sm">pollo cacciatora</p></td>
+                                    <td class="w-20"> <p class="font-second text-red-950">$160</p></td>
+                                    <td class="w-20"><p>2</p></td>
+                                    <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+                                </tr>
+                                <tr class="flex gap-5 items-center p-4	">
+                                    <td class="w-20"><img src="img/Img5.png" alt=""></td>
+                                    <td class="w-20"><p class="text-sm">Tofu Tornado</p></td>
+                                    <td class="w-20"> <p class="font-second text-red-950">$150</p></td>
+                                    <td class="w-20"><p>1</p></td>
+                                    <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+                                </tr>
+                                <tr class="flex gap-5">
+                                    <td>Total</td>
+                                    <td class="font-second text-red-950">$310.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </li>
+                  </ul>
+                </div>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#">
+                <div class="pt-2 relative mx-auto text-gray-600">
+                    <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                      type="search" name="search" placeholder="Search">
+                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+            </a>
+
+            
+
+        </div>
+        
+    </nav>
+
+    <main class="flex justify-center items-center gap-10">
+
+        <!-- Modal -->
+
+
+
+        <!-- end modal -->
+
+        <div class="flex flex-col justify-center align-center text-center  w-64">
+            <img class="w-64" src="img/Img5.png" alt="">
+            <h3 class="text-3xl text-gray-800">Tofu Tornado</h3>
+            <h4 class="text-4xl	font-bold font-second text-red-950"><span class="font-bold font-second">$</span>150.00</h4>
+
+        </div>
+        <div>
+            <div>
+                <h4 class="text-base text-red-950">Nombre</h4>
+                <h5 class="text-sm	text-gray-400">Tofu Tornado</h5>
+            </div>
+            <div>
+                <h4 class="text-base text-red-950">Precio</h4>
+                <h5 class="text-sm	text-gray-400 font-second">$150.00</h5>
+            </div>
+            <div>
+                <h4 class="text-base text-red-950">Descuento</h4>
+                <h5 class="text-sm	text-gray-400 font-second" id="textPrice"><span class="font-second">$</span>0</h5>
+            </div>
+            <div class="mt-2 relative hidden" id="cupon">
+                <input id="contentCupon" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline pr-10"  type="text" placeholder="Redeem Coupon">
+                <i class="fas fa-tag absolute right-0 top-0 mt-2 mr-2 text-gray-500"></i>
+            </div>
+            
+            <div>
+                <button id="btn" class="bg-red-950 text-white hover:text-black hover:bg-slate-50 hover:duration-300  border-stone-400	border text-dark font-bold py-2 px-4 rounded my-4 9w-40">
+                    Tengo un cupón
+                </button>
+                
+                <button id="btnPay"  class="bg-slate-50 border-red-950 hover:bg-red-950 hover:duration-300  hover:text-white border-2 text-dark font-bold py-2 px-4 rounded my-4 9w-40">
+                    Pagar
+                </button>
+            </div>
+
+            
+
+        </div>
+    </main>
+
+    <footer class="bg-zinc-900 h-28 flex items-center justify-around">
+        <img class="w-44" src="img/logo-white.png" alt="">
+        <div class="text-zinc-400 flex gap-2.5">
+            <p>Create by </p>
+            <a href="#" class="text-violet-500	">@ellygmr</a>
+        </div>
+        <div class="text-white">
+            <a  target="_blank"href="https://www.linkedin.com/in/elizabeth-villarruel-3b7745273/" class="text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/ellyhp" class="text-2xl	"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="#" class="text-2xl	"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/aaa255130f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
